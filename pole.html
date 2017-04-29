@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Pole</title>
+		<link rel="stylesheet" type="text/css" href="pole.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3yWgFTvn3f18br0cdpLNbWV4Yr9B5lzs&callback=myMap" type="text/javascript"></script>
+        <script src="pole.js"></script>
+        <script src="pole_data.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+	</head>
+	<body ng-app="PoleApp">
+		<div class="container">
+			<div class="nav navbar-fixed-top">
+				<div class="container">
+					<button class="navbar-toggel" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#">SPARKS</a>
+							</li>
+							<li>
+								<a href="#">USERS</a>
+							</li>
+							<li>
+								<a href="">NOTIFICATIONS</a>
+							</li>
+							<li>
+								<a href="">SCHEDULING</a>
+							</li>
+							<li class="active">
+								<a href="">PARTNERS</a>
+							</li>
+							<li>
+								<a href="">EVENTS</a>
+							</li>
+							<li>
+								<a href="">ADMINS</a>
+							</li>
+						</ul>
+					</div><!--end nav-collapse collapse navbar-responsive-collapse-->
+				</div><!--end container-->
+			</div><!--nav navbar-fixed-top-->
+
+			<div class="first_div" ng-controller="pole">
+				<div class="col-sm-6 features">
+					<div class="panel1">
+						<div class="panel-heading">
+							<h3 class="panel-title">NIT Calicut</h3>
+						</div><!--end panel-heading-->
+						
+						<p>{{ info.store }}
+						<br /><br />
+						National Insitute Of Calicut, Kattangal,<br />Kerala, India
+						<br /><br />
+						National Insitute Of Technology, Calicut is a leading institute of engineering and architecture in India. The motto of insitute is "From Darkness, Lead us unto Light"</p>
+						
+					</div><!--end panel-->
+				</div><!--end col-sm-6 features-->
+				
+				<div class="col-sm-6 features">
+					<div id="map" style="width:400px;height:190px"></div>
+				</div><!--end col-sm-6 features-->
+
+				<div class="col-sm-12 features">
+					<div class="panel2">
+						<div class="panel-heading">
+							<h3 class="panel-title">NIT Calicut</h3>
+						</div><!--end panel-heading-->
+						
+						<p>Education
+						<br /><br />
+						National Insitute Of Calicut, Kattangal,<br />Kerala, India
+						<br /><br />
+						National Insitute Of Technology, Calicut is a leading institute of engineering and architecture in India. The motto of insitute is "From Darkness, Lead us unto Light"</p>
+						
+					</div><!--end panel-->
+				</div><!--end col-sm-12 features-->
+			</div><!--end first_div-->
+		</div><!--end container-->
+	</body>
+</html>
